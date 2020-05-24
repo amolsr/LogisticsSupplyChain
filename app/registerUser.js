@@ -41,7 +41,7 @@ async function main() {
         const enrollment = await ca.enroll({ enrollmentID: 'user1_' + args.org, enrollmentSecret: secret });
         const userIdentity = X509WalletMixin.createIdentity(args.org.charAt(0).toUpperCase() + args.org.slice(1) + 'MSP', enrollment.certificate, enrollment.key.toBytes());
         await wallet.import('user1_' + args.org, userIdentity);
-        console.log('Successfully registered and enrolled admin user_' + args.org + ' and imported it into the wallet');
+        console.log('Successfully registered and enrolled admin user1_' + args.org + ' and imported it into the wallet');
 
     } catch (error) {
         console.error(`Failed to register user_` + args.org + `:  ${error}`);
