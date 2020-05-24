@@ -1,0 +1,32 @@
+{
+  "name": "logistics-org2",
+  "version": "1.0.0",
+  "client": {
+    "organization": "Org2",
+    "connection": {
+      "timeout": {
+        "peer": {
+          "endorser": "300"
+        }
+      }
+    }
+  },
+  "organizations": {
+    "Org2": {
+      "mspid": "Org2MSP",
+      "peers": ["peer0.org2.example.com"],
+      "certificateAuthorities": ["ca.org2.example.com"]
+    }
+  },
+  "peers": {
+    "peer0.org2.example.com": {
+      "url": "grpc://127.0.0.1:9051"
+    }
+  },
+  "certificateAuthorities": {
+    "ca.org2.example.com": {
+      "url": "http://127.0.0.1:9054",
+      "caName": "ca-org2"
+    }
+  }
+}

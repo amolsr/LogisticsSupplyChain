@@ -1,0 +1,14 @@
+{
+  "name": "logisticshyperledger",
+  "version": "1.0.0",
+  "description": "Logistics App on Hyperledger Fabric 1.4.6",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "fabric-ca-client": "^1.4.8",
+    "fabric-network": "^1.4.8",
+    "log4js": "^6.2.1",
+    "yargs": "^15.3.1"
+  }
+}
