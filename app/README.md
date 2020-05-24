@@ -7,6 +7,8 @@ node registerUser.js --org=org1
 node registerUser.js --org=org2
 ```
 
+#### Copy the pdf file to the asset directory
+
 ### Transaction In Blockchain
 
 ```
