@@ -3,7 +3,7 @@ const { FileSystemWallet, Gateway, X509WalletMixin } = require('fabric-network')
 const path = require('path');
 const args = require('yargs').argv
 
-const ccpPath = path.resolve(__dirname, '..', 'connection-' + args.org + '.json');
+const ccpPath = path.resolve(__dirname, '..', 'connection-profile', args.org + '.json');
 
 async function main() {
     try {

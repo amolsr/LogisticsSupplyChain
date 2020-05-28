@@ -3,7 +3,7 @@ const path = require('path');
 const args = require('yargs').argv
 const { getHashOfFile } = require('./helper')
 
-const ccpPath = path.resolve(__dirname, '..', 'connection-' + args.org + '.json');
+const ccpPath = path.resolve(__dirname, '..', 'connection-profile', args.org + '.json');
 
 async function main() {
 	try {

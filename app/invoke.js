@@ -8,7 +8,7 @@ logger.level = 'DEBUG';
 
 var util = require('util')
 
-const ccpPath = path.resolve(__dirname, '..', 'connection-' + args.org + '.json');
+const ccpPath = path.resolve(__dirname, '..', 'connection-profile', args.org + '.json');
 
 async function main() {
     try {
