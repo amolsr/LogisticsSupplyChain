@@ -1,0 +1,11 @@
+{
+  "network-configs": {
+    "logistics": {
+      "name": "logistics",
+      "profile": "./connection-profile/network-profile.json"
+    }
+  },
+  "configtxgenToolPath": "/tmp/bin",
+  "keyValueStore": "/tmp/fabric-client-kvs",
+  "license": "Apache-2.0"
+}

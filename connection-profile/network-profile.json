@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "client": {
     "tlsEnable": false,
-    "organization": "Org2MSP",
-    "adminUser":"admin_org2",
+    "organization": "Org1MSP",
+    "adminUser":"admin_org1",
     "adminPassword":"adminpw",
     "enableAuthentication":false,
     "connection": {
@@ -37,7 +37,6 @@
     "Org2MSP": {
       "mspid": "Org2MSP",
       "fullpath": true,
-      "certificateAuthorities": ["ca.org2.example.com"],
       "peers": ["peer0.org2.example.com"],
       "adminPrivateKey": {
         "path": "/tmp/crypto/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore/ea5d16b7e9df967a87dfd2b3693c4b85d16396bfa65c3ae45a2c5f562fcab1e1_sk"
@@ -49,7 +48,6 @@
     "Org1MSP": {
       "mspid": "Org1MSP",
       "fullpath": true,
-      "certificateAuthorities": ["ca.org1.example.com"],
       "peers": ["peer0.org1.example.com"],
       "adminPrivateKey": {
         "path": "/tmp/crypto/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/7d1cc0018fa9cd538fcf777120ee38c2de41d76701f12afb74f3c1ad32fe49ee_sk"

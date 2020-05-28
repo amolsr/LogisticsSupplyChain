@@ -1,26 +1,25 @@
-version: '2'
+version: "2.1"
 
 networks:
-    fabric:
+  fabric:
 
 services:
-
-    orderer.example.com:
-        extends:
-            file: docker-compose-base.yml
-            service: orderer
-        container_name: orderer.example.com
-        environment:
-            - ORDERER_HOST=orderer.example.com
-            - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
-            - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/4640a3f21fa8b95518b1db1271a2001a546881af5afbd4010d2a813ff5fed3bc_sk
-        volumes:
-            - ../crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp:/var/hyperledger/msp
-            - ../crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls:/var/hyperledger/tls
-            - ../channel-artifacts/:/var/hyperledger/configs
-        networks:
-          fabric:
-             aliases:
-               - net
-        ports:
-          - 7050:7050
+  orderer.example.com:
+    extends:
+      file: docker-compose-base.yml
+      service: orderer
+    container_name: orderer.example.com
+    environment:
+      - ORDERER_HOST=orderer.example.com
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/4640a3f21fa8b95518b1db1271a2001a546881af5afbd4010d2a813ff5fed3bc_sk
+    volumes:
+      - ../crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/msp:/var/hyperledger/msp
+      - ../crypto-config/ordererOrganizations/example.com/orderers/orderer.example.com/tls:/var/hyperledger/tls
+      - ../channel-artifacts/:/var/hyperledger/configs
+    networks:
+      fabric:
+        aliases:
+          - net
+    ports:
+      - 7050:7050
